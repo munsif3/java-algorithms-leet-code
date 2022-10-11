@@ -1,0 +1,77 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch ThreeSum",
+            "request": "launch",
+            "mainClass": "TwoPointers.ThreeSum",
+            "projectName": "java-test_4ec94461"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch ContainsDuplicate",
+            "request": "launch",
+            "mainClass": "ArraysAndHashing.ContainsDuplicate",
+            "projectName": "java-test_4ec94461"
+        },
+        {
+            "type": "java",
+            "name": "Launch GroupAnagrams",
+            "request": "launch",
+            "mainClass": "ArraysAndHashing.GroupAnagrams",
+            "projectName": "java-test_4ec94461"
+        },
+        {
+            "type": "java",
+            "name": "Launch ProductOfArrayExceptSelf",
+            "request": "launch",
+            "mainClass": "ArraysAndHashing.ProductOfArrayExceptSelf",
+            "projectName": "java-test_4ec94461"
+        },
+        {
+            "type": "java",
+            "name": "Launch TopKFrequentElements",
+            "request": "launch",
+            "mainClass": "ArraysAndHashing.TopKFrequentElements",
+            "projectName": "java-test_4ec94461"
+        },
+        {
+            "type": "java",
+            "name": "Launch TwoSum",
+            "request": "launch",
+            "mainClass": "ArraysAndHashing.TwoSum",
+            "projectName": "java-test_4ec94461"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValidAnagram",
+            "request": "launch",
+            "mainClass": "ArraysAndHashing.ValidAnagram",
+            "projectName": "java-test_4ec94461"
+        },
+        {
+            "type": "java",
+            "name": "Launch ValidSudoku",
+            "request": "launch",
+            "mainClass": "ArraysAndHashing.ValidSudoku",
+            "projectName": "java-test_4ec94461"
+        },
+        {
+            "type": "java",
+            "name": "Launch IsPalindrome",
+            "request": "launch",
+            "mainClass": "TwoPointers.IsPalindrome",
+            "projectName": "java-test_4ec94461"
+        }
+    ]
+}

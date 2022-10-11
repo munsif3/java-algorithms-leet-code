@@ -5,6 +5,7 @@ import java.util.Set;
 
 public class ValidSudoku {
     public static void main(String[] args) {
+        // "." means no number on board
         char[][] testCase1 = {
                 { '5', '3', '.', '.', '7', '.', '.', '.', '.' },
                 { '6', '.', '.', '1', '9', '5', '.', '.', '.' },
@@ -37,10 +38,11 @@ public class ValidSudoku {
         int rows = board.length;
         int cols = board[0].length;
 
+        // Hashset to detect duplicates
         Set<Character> rowSet = null;
         Set<Character> colSet = null;
 
-        // check for rows
+        // check for rows - if duplicate value exists then not a valid sudoku board
         for (int i = 0; i < rows; i++) {
             rowSet = new HashSet<>();
             for (int j = 0; j < cols; j++) {
@@ -54,7 +56,7 @@ public class ValidSudoku {
             }
         }
 
-        // check for cols
+        // check for cols - if duplicate value exists then not a valid sudoku board
         for (int i = 0; i < cols; i++) {
             colSet = new HashSet<>();
             for (int j = 0; j < rows; j++) {
@@ -64,12 +66,11 @@ public class ValidSudoku {
                 if (colSet.contains(board[j][i])) {
                     return false;
                 }
-
                 colSet.add(board[j][i]);
             }
         }
 
-        // block
+        // block - also need to make sure no duplicate value exists in the 3x3 subsquare
         for (int i = 0; i < rows; i = i + 3) {
             for (int j = 0; j < cols; j = j + 3) {
                 if (!checkBlock(i, j, board)) {
@@ -77,7 +78,6 @@ public class ValidSudoku {
                 }
             }
         }
-
         return true;
     }
 
@@ -90,15 +90,12 @@ public class ValidSudoku {
                 if (board[i][j] == '.') {
                     continue;
                 }
-
                 if (blockSet.contains(board[i][j])) {
                     return false;
                 }
-
                 blockSet.add(board[i][j]);
             }
         }
-
         return true;
     }
 }
